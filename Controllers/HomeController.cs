@@ -7,6 +7,8 @@ namespace Shop.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
+        [Route("v1")]
         public async Task<ActionResult<dynamic>> Get(
             [FromServices] DataContext context
         )
